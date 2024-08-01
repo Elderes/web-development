@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS formulário</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    </head>
+    <body>  
+        <form method="post" action="https://httpbin.org/post">
+            <fieldset>
+                <legend>Dados básicos</legend>
+                <label>Nome: </label><input type="text" id="nome"/>
+                <br>
+                <label>E-mail: </label><input type="email" id="email"/>
+                <br>
+                <label>Senha: </label><input type="password" id="senha"/>
+                <br>
+                <label>Data de nascimento: </label><input type="date" id="data"/>
+                <br>
+                <label>Qual a sua idade? </label><input type="number" id="idade"/>
+                <br>
+                <label>Qual a cor predileta? </label><input type="color" id="cor predileta"/>
+                <br>
+                <label>Qual o seu telefone? </label><input type="tel" id="telefone" pattern="[0-9]{11}"/>
+                <br>
+                <label>Qual o turno que você prefere estudar? </label>
+                <select >
+                    <option id="opção" selected disabled>Escolha uma opção</option>
+                    <option id="manhã">Manhã</option>
+                    <option id="tarde">Tarde</option>
+                    <option id="noite">Noite</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Quais tecnologias web te interessam?</legend>
+                <input name="linguagem" type="checkbox" id="html" value="html"/><label>HTML</label>
+                <br>
+                <input name="linguagem" type="checkbox" id="css" value="css"/><label>CSS</label>
+                <br>
+                <input name="linguagem" type="checkbox" id="javascript" value="javascript"/><label>JavaScript</label>
+            </fieldset>
+            <fieldset>
+                <legend>Você é de Esperança - PB?</legend>
+                <input type="radio" name="esperancense" id="sim" value="sim"/><label>Sim</label>
+                <br>
+                <input type="radio" name="esperancense" id="não" value="não"/><label>Não</label>
+                <br>
+            </fieldset>
+            <input type="submit"/>
+    </body>
+</html>
