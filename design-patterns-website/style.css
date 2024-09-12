@@ -3,11 +3,38 @@ body {
     font-family: monospace;
     background-color: rgb(0, 82, 57);
 
-    margin-left: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 5%;
 }
 
-img {
-    width: 20%;
-    margin-top: 100px;
+.centralizada {
+    display: block; /* Torna a imagem um bloco para que a margem funcione */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona uma margem superior */
+    left: 50%; /* Centraliza a imagem horizontalmente */
 }
+
+a:link {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  
+  a:active {
+    color: cornsilk;
+    background-color: transparent;
+    text-decoration: underline;
+  }
