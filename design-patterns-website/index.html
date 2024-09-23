@@ -17,147 +17,184 @@
     
     <!-- Padrões Existentes -->
     <h3>Factory Method</h3>
-    <ul>
+    <p>
         Definição: Permite a criação de objetos sem especificar a classe exata do objeto que será criado. Define uma interface para criar um objeto, mas permite que as subclasses alterem o tipo de objetos que serão criados.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Utilizado quando uma classe não pode antecipar a classe de objetos que deve criar ou quando uma classe deseja que suas subclasses especifiquem os objetos que criam.
-    </ul>
+    </p>
     
     <h3>Abstract Factory Method</h3>
-    <ul>
+    <p>
         Definição: Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas. É uma fábrica de fábricas.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Usado quando o sistema deve ser independente de como seus objetos são criados, compostos e representados, ou quando se deseja fornecer uma biblioteca de produtos que seguem uma mesma família.
-    </ul>
+    </p>
     
     <h3>Singleton</h3>
-    <ul>
+    <p>
         Definição: Garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Utilizado quando é necessário exatamente um objeto de uma classe, por exemplo, um gerenciador de janelas, um pool de conexões ou um registrador.
-    </ul>
+    </p>
     
     <h3>Builder</h3>
-    <ul>
+    <p>
         Definição: Separa a construção de um objeto complexo da sua representação de modo que o mesmo processo de construção possa criar diferentes representações.
-    </ul>
-    <ul>
-        Uso: Usado quando a criação de um objeto envolve muitos passos complexos e você quer ocultar esses passos dos clientes do objeto.
-    </ul>
+    </p>
+    <p>
+        Uso: Usado quando a criação de um objeto envolve muitos passos complexos e você quer ocptar esses passos dos clientes do objeto.
+    </p>
     
     <h3>Prototype</h3>
-    <ul>
+    <p>
         Definição: Especifica os tipos de objetos a serem criados usando uma instância prototípica e cria novos objetos copiando esse protótipo.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Utilizado quando a classe a ser instanciada é determinada em tempo de execução e quando evitar a criação de objetos que requerem recursos caros (tempo ou memória).
-    </ul>
+    </p>
 
     <h3>Adapter</h3>
-    <ul>
+    <p>
         Definição: Converte a interface de uma classe em outra interface esperada pelos clientes. Permite que classes com interfaces incompatíveis trabalhem juntas.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Utilizado quando você quer usar uma classe existente, mas sua interface não corresponde à que você precisa, ou para permitir que classes que não podem trabalhar juntas devido a interfaces incompatíveis possam fazê-lo.
-    </ul>
-    <ul>
+    </p>
+    <p>
         <a href="https://github.com/Elderes/design-patterns/tree/master/adapter", target="_blank">Código de Exemplo</a>
-    </ul>
+    </p>
     
     <h3>Bridge</h3>
-    <ul>
+    <p>
         Definição: Desacopla uma abstração da sua implementação, permitindo que ambas variem independentemente. Separa a interface de um objeto de sua implementação concreta.
-    </ul>
-    <ul>
-        Uso: Usado quando é necessário evitar um vínculo forte entre uma abstração e sua implementação ou quando você deseja que a abstração e a implementação possam ser desenvolvidas e alteradas independentemente.
-    </ul>
+    </p>
+    <p>
+        Uso: Usado quando é necessário evitar um víncpo forte entre uma abstração e sua implementação ou quando você deseja que a abstração e a implementação possam ser desenvolvidas e alteradas independentemente.
+    </p>
 
     <h3>Chain of Responsibility</h3>
-    <ul>
-        Definição: Permite que um pedido seja passado por uma corrente de manipuladores. Cada manipulador decide processar o pedido ou passá-lo adiante.
-    </ul>
-    <ul>
+    <p>
+        Definição: Permite que um pedido seja passado por uma corrente de manippadores. Cada manippador decide processar o pedido ou passá-lo adiante.
+    </p>
+    <p>
         Uso: Usado quando você deseja que mais de um objeto possa tratar uma solicitação sem que o remetente conheça o receptor exato.
-    </ul>
-    <ul>
+    </p>
+    <p>
         <a href="https://github.com/Elderes/design-patterns/tree/master/chain_of_responsability", target="_blank">Código de Exemplo</a>
-    </ul>
+    </p>
 
     <h3>State</h3>
-    <ul>
+    <p>
         Definição: Permite que um objeto altere seu comportamento quando seu estado interno muda. O objeto parecerá ter mudado sua classe.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Utilizado quando o comportamento de um objeto deve mudar com base em seu estado.
-    </ul>
+    </p>
 
     <h3>Strategy</h3>
-    <ul>
-        Definição: Define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis. Permite que o algoritmo varie independentemente dos clientes que o utilizam.
-    </ul>
-    <ul>
+    <p>
+        Definição: Define uma família de algoritmos, encapspa cada um deles e os torna intercambiáveis. Permite que o algoritmo varie independentemente dos clientes que o utilizam.
+    </p>
+    <p>
         Uso: Usado quando você quer escolher o algoritmo a ser executado em tempo de execução.
-    </ul>
+    </p>
 
     <h3>Template Method</h3>
-    <ul>
+    <p>
         Definição: Define o esqueleto de um algoritmo na superclasse, permitindo que as subclasses implementem etapas específicas do algoritmo.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Utilizado para definir o esqueleto de um comportamento e permitir que subclasses alterem certas partes sem modificar a estrutura do algoritmo.
-    </ul>
+    </p>
 
     <h3>Visitor</h3>
-    <ul>
+    <p>
         Definição: Permite adicionar novas operações a objetos de uma estrutura sem alterar as classes dos objetos.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Usado quando uma operação precisa ser executada em todos os elementos de uma estrutura de objetos complexa.
-    </ul>
+    </p>
 
     <h3>Observer</h3>
-    <ul>
+    <p>
         Definição: Define uma dependência de um-para-muitos entre objetos de modo que, quando um objeto muda de estado, todos os seus dependentes são notificados e atualizados automaticamente.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Utilizado quando uma mudança no estado de um objeto precisa refletir mudanças em outros objetos, ou quando o acoplamento entre os objetos deve ser mínimo.
-    </ul>
+    </p>
 
     <h3>Memento</h3>
-    <ul>
-        Definição: Captura e externaliza o estado interno de um objeto sem violar o encapsulamento, permitindo que o objeto volte ao estado capturado posteriormente.
-    </ul>
-    <ul>
+    <p>
+        Definição: Captura e externaliza o estado interno de um objeto sem violar o encapspamento, permitindo que o objeto volte ao estado capturado posteriormente.
+    </p>
+    <p>
         Uso: Usado quando você deseja salvar e restaurar o estado de um objeto sem expor os detalhes de implementação.
-    </ul>
+    </p>
 
     <h3>Mediator</h3>
-    <ul>
-        Definição: Define um objeto que encapsula a forma como um conjunto de objetos interage, promovendo um baixo acoplamento ao impedir que os objetos se refiram uns aos outros explicitamente.
-    </ul>
-    <ul>
+    <p>
+        Definição: Define um objeto que encapspa a forma como um conjunto de objetos interage, promovendo um baixo acoplamento ao impedir que os objetos se refiram uns aos outros explicitamente.
+    </p>
+    <p>
         Uso: Utilizado para centralizar a comunicação complexa e o controle entre objetos relacionados.
-    </ul>
+    </p>
 
     <h3>Iterator</h3>
-    <ul>
+    <p>
         Definição: Fornece uma maneira de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente.
-    </ul>
-    <ul>
+    </p>
+    <p>
         Uso: Usado quando você deseja acessar elementos de uma coleção sem expor sua estrutura interna.
-    </ul>
+    </p>
 
     <h3>Command</h3>
-    <ul>
-        Definição: Encapsula uma solicitação como um objeto, permitindo que você parametrize clientes com diferentes solicitações, filas ou log de solicitações, e suporta operações reversíveis.
-    </ul>
-    <ul>
+    <p>
+        Definição: Encapspa uma solicitação como um objeto, permitindo que você parametrize clientes com diferentes solicitações, filas ou log de solicitações, e suporta operações reversíveis.
+    </p>
+    <p>
         Uso: Utilizado quando você deseja parametrizar objetos com operações, atrasar a execução de operações ou suportar operações reversíveis.
-    </ul>
+    </p>
 
-    <img src="https://i.pinimg.com/originals/ac/ab/7b/acab7b59edd132de64a6d5d08aa0c55a.png", class="centralizada">
+    <h2>Propriedades ACID</h2>
+    <ul>A - Atomicity</ul>
+    <ul>C - Consistency</ul>
+    <ul>I - Isolation</ul>
+    <ul>D - Durability</ul>
+    <p>
+        Conjunto de propriedades de transações de banco de dados com a intenção de garantir validade dos dados
+        independente de erros, quedas de energia e outros infortúnios.
+    </p>
+
+    <h3>Atomicidade</h3>
+    <p>
+        Tudo ou nada. As transações precisam garantir um sucesso completo ou uma falha completa, não
+        abrindo espaço para meios termos. Se a transação falhar, o dado armazenado no banco de dados
+        não pode ser alterado.
+    </p>
+
+    <h3>Consistência</h3>
+    <p>
+        Qualquer dado precisa ser extensivamente válidado antes de ser escrito no banco de dados. Não
+        podem haver inconsistências de dados. Esses validadores incluem restrições, cascatas, gatilhos
+        e qualquer outra combinação.
+    </p>
+
+    <h3>Isolamento</h3>
+    <p>
+        Transações geralmente ocorrem simultâneamente. Isolamento garante que as operações deixaram o
+        banco de dados no estado correto no caso das transações terem sido feitas em sequência.
+    </p>
+
+    <h3>Durabilidade</h3>
+    <p>
+        Garante que quando uma transação estiver em processo, manterá o estado os registros independente
+        de falhas de energia ou outras adversidades fisicas que levem a falha do sistema, armazenando-as 
+        em memória não-volátil.
+    </p>
+
+    <!-- <img src="https://e7.pngegg.com/pngimages/27/935/png-clipart-pixel-art-f-zero-game-electronics-raspberry-pi-game-electronics.png", class="centralizada"> -->
 </body>
 </html>

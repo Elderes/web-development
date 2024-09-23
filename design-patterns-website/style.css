@@ -20,21 +20,21 @@ a:link {
     text-decoration: underline;
   }
   
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
-  a:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  
-  a:active {
-    color: cornsilk;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+a:active {
+  color: cornsilk;
+  background-color: transparent;
+  text-decoration: underline;
+}
